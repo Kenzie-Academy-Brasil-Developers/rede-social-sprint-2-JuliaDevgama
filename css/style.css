@@ -16,12 +16,14 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
-  
+  --fonte: Arial, Helvetica, sans-serif;
+  --corTexto:#262626;
 }
 
 /*BODY*/
 body{
-
+font-family: var(--fonte);
+color: var(--corTexto);
 }
 
 /*TOPO*/
@@ -35,17 +37,35 @@ footer{
 }
 
 /*PÁGINA INICIAL*/
-main{
-	
+.container{
+	max-width: 935px;
 }
 	main .profile-content{
-
 	}
-
+	.profile-photo img {
+		border: 5px double black;
+		border-radius: 86px;
+		height: 18vh;
+	}
 	main .highlighted-stories{
-
 	}
-
+	 li{
+		list-style: none;
+	} 
+	img[src="img/plus-sign.png"], img[src="img/highlight.jpg"]{
+		height: 77px;
+		border-radius: 80px;
+	}
 	main .profile-posts{
 
+	}
+	img[src="img/post1.jpg"], img[src="img/post2.jpg"], img[src="img/post3.jpg"], img[src="img/post4.jpg"], img[src="img/post5.jpg"], img[src="img/post6.jpg"]{
+		width: 293px;
+		height: 293px;
+	}
+	img[src="img/logo-kenziegram.png"]{
+		top: -8px;
+		height: 8vh;
+		position: relative;
+		left: -33px;
 	}
