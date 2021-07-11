@@ -24,41 +24,100 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 body{
 font-family: var(--fonte);
 color: var(--corTexto);
+margin: 0;
 }
 
 /*TOPO*/
-header{
-	
+header figure{
+	position: relative;
+    left: 15%;
 }
 
-/*RODAPÉ*/
-footer{
-
-}
 
 /*PÁGINA INICIAL*/
 .container{
-	max-width: 935px;
+	width: 935px;
+	margin: 0 auto;
 }
-	main .profile-content{
-	}
+
+.profile-photo {
+		display: flex;
+    	align-items: center;
+}
 	.profile-photo img {
 		border: 5px double black;
 		border-radius: 86px;
 		height: 18vh;
+		
+}
 	}
-	main .highlighted-stories{
+	main .highlighted-stories ul{
+		display: flex;
+		justify-content: flex-start;
+	}
+	ul {
+		display: flex;
+		flex-wrap: wrap;
 	}
 	 li{
 		list-style: none;
 	} 
-	img[src="img/plus-sign.png"], img[src="img/highlight.jpg"]{
-		height: 77px;
-		border-radius: 80px;
+	li img {
+		width: 293px;
+		height: 293px;
 	}
-	main .profile-posts{
+	.add-new-highlight figure img {
+		width: 77px;
+		height: 77px;
+		border-radius: 100%;
+	}
+	main .profile-content {
+		display: flex;
+    flex-direction: row;
+	}
+	.profile-info {
+		margin-left: 10%;
+	}
+	main .profile-info h1{
+		font-size: 2em;
+    	font-weight: lighter;
+	}
+	main .profile-info h2 {
+		font-size: 1em;
+		font-weight: bold;
+	}
+
+	main .profile-data {
+		display: flex;
+    	justify-content: space-evenly;
+    	position: relative;
+    	right: 15%;
+	}
+	span{
+		font-weight: bold;
+		font-family: var(--fonte);
+	}
+	
+	main .profile-posts nav{
+		display: flex;
+    	justify-content: center;
+		border-top: 1px solid lightgray;
+	}
+	a[href="#"]{
+		text-decoration: none;
+    	margin-right: 50px;
+   		padding-top: 15px;
+    	height: 100%;
+	}
+	#soesse {
+		border-top: 2px solid black;
 
 	}
+	a[href="#"]:hover{
+		border-top: 2px solid black;
+
+	}
+
 	img[src="img/post1.jpg"], img[src="img/post2.jpg"], img[src="img/post3.jpg"], img[src="img/post4.jpg"], img[src="img/post5.jpg"], img[src="img/post6.jpg"]{
 		width: 293px;
 		height: 293px;
